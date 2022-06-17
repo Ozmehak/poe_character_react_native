@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/my-react-native-project.iml" filepath="$PROJECT_DIR$/.idea/my-react-native-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../poe_character_import_react_native/.idea/poe_character_import.iml" filepath="$PROJECT_DIR$/../poe_character_import_react_native/.idea/poe_character_import.iml" />
     </modules>
   </component>
 </project>

@@ -1,10 +1,10 @@
 import wretch from 'wretch'
 import {useEffect, useState} from "react";
 import {Text, View, FlatList, Image, StyleSheet} from "react-native";
-import {ScrollView} from "react-native";
 
 
-export const Cities = (props) => {
+
+export const Poe = (props) => {
     const [character, setCharacter] = useState(null)
     const [items, setItems] = useState({})
 

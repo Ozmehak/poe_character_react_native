@@ -1,24 +1,27 @@
 import {TextInput, Button, View} from "react-native";
 import {useState} from "react";
-import Cities from "./Cities";
+import {Poe} from "./Poe";
+import {Text} from "react-native";
 
 
 export const SearchForm = () => {
     const [accName, setAccName] = useState()
     const [charName, setCharName] = useState()
+    const [poe, setPoe] = useState(null)
+
 
     const handlePress = () => {
-     setCities(true)
+     setPoe(true)
     }
 
     return (
-        <View>
+        <View style={{height: '60%'}}>
             <TextInput
                 onChangeText={(text) => setAccName(text)}
                 onSubmitEditing={() => {
                     alert()
                 }}
-                style={{borderWidth: 1}}
+                style={{borderWidth: 3, borderColor: '#fff', padding: 5}}
                 value={accName}
             />
             <TextInput
@@ -26,13 +29,20 @@ export const SearchForm = () => {
                 onSubmitEditing={() => {
                     alert()
                 }}
-                style={{borderWidth: 1}}
+                style={{borderWidth: 3, borderColor: '#fff', padding: 5}}
                 value={charName}
             />
             <Button title={'Search'} onPress={handlePress}/>
-            <Cities />
+
+            <Text>
+            {poe && (
+                <Poe acc={accName} char={charName}/>
+                )}
+            </Text>
+
 
 
         </View>
     )
+
 }
